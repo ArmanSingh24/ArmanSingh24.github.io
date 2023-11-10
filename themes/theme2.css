@@ -1,0 +1,39 @@
+* {
+    transition: all 0.5s ease-in-out;
+}
+
+body {
+
+    background-color: #010E1B;
+
+}
+
+.navbar {
+    background-color: rgba(25, 56, 88, 0.300);
+}
+
+#theme-select option {
+    color: #ffffff;
+    background-color: #010b14;
+}
+
+.logo {
+    color: #DEE2E6;
+}
+.white {
+    background-color: rgb(14, 36, 58);
+    margin-right: 20px;
+}
+.grey {
+    background-color: rgb(80, 90, 100);
+}
+.links-section li {
+    background-color: #051524;
+ }
+ .links-section ul li:hover{
+    background-color: rgb(6, 12, 17);
+    transition-duration: .1s;
+}
+footer {
+    background-color: #010b14;
+}

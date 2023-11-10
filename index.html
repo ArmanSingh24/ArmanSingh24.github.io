@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arman's Portfolio</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link id="theme" rel="stylesheet" type="text/css" href="themes/theme1.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/10f60da0cf.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="navigation">
+        <!-- Default Nav-->
+        <div class="navbar">
+            <nav>
+                <span class="logo">Arman Singh</span>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <button onclick="switchTheme()" style="all: unset;"><i class="fa fa-sun"
+                            style="color: #ffffff;"></i></button>
+                </ul>
+            </nav>
+        </div>
+        <!-- Nav for smaller screens -->
+        <div class="navbar2">
+            <nav>
+                <div style="display: flex; flex-direction: column;">
+                    <span class="logo2">Arman Singh <i id="icon" class="fa fa-bars"></i></span>
+                    <div id="nav-items" style="display: none;">
+                        <a href="#">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="main">
+        <div class="header">
+            <!-- Header Text -->
+            <h1 class="name"><span>Hey, I'm</span> Arman Singh!</h1>
+            <p class="passion">Editor and Web Developer</p>
+            <p id="timenddate"></p>
+        </div>
+        <div class="about" id="about">
+            <!-- About -->
+            <div>
+                <h2>About Me</h2>
+                <hr>
+                <p class="aboutme">
+                    Hi, I'm Arman Singh &#128075;
+                    <br>
+                    Welcome to my website! I'm a
+                    <span id="age" style="display: inline-block; width: 102px;"></span>
+                    y/o high school student from
+                    <a href="https://en.wikipedia.org/wiki/India" target="_blank"
+                        style="text-decoration: none; color: #b8b8b8;">India</a>.
+                    I'm currently living in
+                    <a href="https://en.wikipedia.org/wiki/Kota,_Rajasthan" target="_blank"
+                        style="text-decoration: none; color: #b8b8b8;">Kota</a>
+                    and preparing for one of the toughest exam
+                    <a href="https://en.wikipedia.org/wiki/Joint_Entrance_Examination" target="_blank"
+                        style="text-decoration: none; color: #b8b8b8;">JEE</a>.
+                    I have a passion for web development, editing, and VFX, and I've spent countless hours
+                    honing my skills in these areas.
+                    I'm excited to showcase my work and share my experiences with you. Whether you're looking for
+                    inspiration, tips and tricks, or just want to learn more about what I do, I hope you'll find
+                    something of value here. Thank you for stopping by!
+                </p>
+            </div>
+            <!-- Skills -->
+            <div>
+                <h3 class="skills">My Skills</h3>
+                <p class="skill1">Editing</p>
+                <div class="white">
+                    <div class="grey" style="height:28px;width:75%"></div>
+                </div>
+                <p class="skill2">Web Development</p>
+                <div class="white">
+                    <div class="grey" style="height:28px;width:55%"></div>
+                </div>
+                <p class="skill3">Blender/VFX</p>
+                <div class="white">
+                    <div class="grey" style="height:28px;width:20%"></div>
+                </div><br>
+            </div>
+        </div>
+        <div class="projects" id="projects">
+            <div class="projects-header">
+                <h2>Projects</h2>
+                <hr>
+            </div>
+            <div class="project">
+                <img src="images/spotify-logo.png" alt="Project Logo" class="project-logo">
+                <div class="project-info">
+                    <h3 class="project-name">Spotify Clone</h3>
+                    <p class="project-description">Coming Soon</p>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/windows.png" alt="Project Logo" class="project-logo" style="border-radius: 0;">
+                <div class="project-info">
+                    <h3 class="project-name">Windows 11 Clone</h3>
+                    <p class="project-description">Coming Soon</p>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/weather.png" alt="Project Logo" class="project-logo">
+                <div class="project-info">
+                    <h3 class="project-name">Weather App</h3>
+                    <p class="project-description">Coming Soon</p>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/clock.png" alt="Project Logo" class="project-logo">
+                <div class="project-info">
+                    <h3 class="project-name">World Clock</h3>
+                    <p class="project-description">Coming Soon</p>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/tictactoe.png" alt="Project Logo" class="project-logo">
+                <div class="project-info">
+                    <h3 class="project-name">Tic-Tac-Toe</h3>
+                    <p class="project-description">Coming Soon</p>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/2048.png" alt="Project Logo" class="project-logo">
+                <div class="project-info">
+                    <h3 class="project-name">2048 Game</h3>
+                    <p class="project-description">Coming Soon</p>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/calculator.png" alt="Project Logo" class="project-logo" style="border-radius: 0;">
+                <div class="project-info">
+                    <h3 class="project-name">Calculator</h3>
+                    <p class="project-description">Coming Soon</p>
+                </div>
+            </div>
+        </div>
+        <div class="links">
+            <h2>Links</h2>
+            <hr>
+            <div class="links-section">
+                <ul>
+                    <li><a href="https://www.instagram.com/arman.singh24" target="_blank"><i
+                                class="fa-brands fa-instagram"></i>Instagram // @arman.singh24</a></li>
+                    <li><a href="https://discordapp.com/users/1010197490823340184" target="_blank"><i
+                                class="fa-brands fa-discord" style="color: #ffffff;"></i>Discord // @frost.vfx</a>
+                    </li>
+                    <li><a href="https://www.twitter.com/@_armansingh" target="_blank"><i class="fa-brands fa-twitter"
+                                style="color: #ffffff;"></i>Twitter // @_armansingh</a></li>
+                    <li><a href="https://github.com/ArmanSingh24" target="_blank"><i class="fa fa-github"></i>Github //
+                            @ArmanSingh24</a></li>
+                    <li><a href="https://www.youtube.com/@arman.singh24/featured" target="_blank"><i
+                                class="fa-brands fa-youtube" style="color: #ffffff;"></i>YouTube // @arman.singh24</a>
+                    </li>
+                    <li><a href="https://open.spotify.com/user/31lsfjwfrlrnpyxsx6piipwvei5q" target="_blank"><i
+                                class="fa-brands fa-spotify" style="color: #ffffff;"></i>Spotify // @armansingh24</a>
+                    </li>
+                    <li><a href="https://www.linkedin.com/in/armansingh24/" target="_blank"><i
+                                class="fa-brands fa-linkedin" style="color: #ffffff;"></i>LinkedIn // @armansingh24</a>
+                    </li>
+                    <li><a href="" target="_blank"><i class="fa-brands fa-codepen" style="color: #ffffff;"></i>Replit //
+                            @armansingh24</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- <div class="images">
+            <h2>Image Gallery</h2>
+            <hr>
+        </div> -->
+
+    </div>
+    <div class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <hr>
+        <div>
+            <p><i class="fa fa-map-marker fa-fw w3-text-white"></i>MP, INDIA</p>
+            <p><i class="fa fa-envelope fa-fw w3-text-white"></i> Email:
+                armansingh6692@gmail.com
+            </p>
+        </div>
+    </div>
+    <footer>
+        <div class="footerelements">
+            <span class="copyright">&copy; Arman.Singh24 All rights reserved. </span>
+            <span class="icons">
+                <a href="https://www.instagram.com/arman.singh24" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@arman.singh24" target="_blank"><i class="fa fa-youtube-play"></i></a>
+                <a href="https://github.com/ArmanSingh24" target="_blank"><i class="fa fa-github"></i></a>
+                <a href="https://twitter.com/ArmanSin24" target="_blank"><i class="fa fa-twitter"></i></a>
+            </span>
+        </div>
+    </footer>
+    </div>
+</body>
+</html>

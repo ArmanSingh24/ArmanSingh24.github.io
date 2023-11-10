@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+.navbar {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    backdrop-filter: blur(5px);
+}
+
+.navbar2 {
+    display: none;
+}
+
+#theme-select {
+    background-color: #ff000000;
+    border: none;
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: default;
+    font-family: Montserrat;
+    padding: 0px 0px 0px 0px;
+}
+
+#theme-select:focus {
+    outline: none;
+}
+
+.logo {
+    float: left;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    padding: 10px 0px 10px 30px;
+    transition: .5s ease-in-out;
+    cursor: default;
+}
+
+.logo:hover {
+    color: rgb(192, 192, 192);
+}
+
+.navbar nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+    float: right;
+}
+
+.navbar nav ul li {
+    display: inline;
+    padding: 35px;
+}
+
+.navbar nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: Montserrat;
+    position: relative;
+    display: inline-block;
+}
+
+nav ul li a:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #cecece;
+    transition: width .3s ease;
+}
+
+nav ul li a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+/* Add a transition property to the theme link tag */
+#theme {
+    transition: all 0.5s ease;
+}
+
+.main {
+    color: white;
+    width: 100%;
+    margin-top: 150px;
+}
+
+.header {
+    margin-left: 30px;
+    font-size: 40px;
+}
+
+.name,
+.passion {
+    margin: 5px;
+    font-family: 'Urbanist', sans-serif;
+}
+#timenddate {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    margin-left: 8px;
+}
+.about {
+    margin: 0 0 0 30px;
+    padding-top: 1px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.about h2 {
+    margin: 120px 0px 0px 3px;
+}
+
+hr {
+    width: 200px;
+    margin: 10px 0px 20px;
+}
+
+.aboutme {
+    padding-right: 120px;
+    line-height: 1.3;
+    font-size: 17px;
+}
+
+div.extra {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.extra1 iframe,
+.extra2 iframe {
+    margin-top: 10px;
+}
+
+.extra1,
+.extra2 {
+    margin-right: 25px;
+}
+
+.skills {
+    margin-top: 50px;
+}
+
+.white {
+    margin-right: 20px;
+}
+
+
+
+.projects {
+    padding-top: 80px;
+    margin: 20px 0 0 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.projects-header {
+    width: 100%;
+}
+
+.project {
+    display: flex;
+    width: 33%;
+    height: 110px;
+    align-items: center;
+    margin: 30px 0px 0px 0px;
+}
+
+.project-logo {
+    pointer-events: none;
+    border-radius: 50%;
+    width: 100px;
+    margin-right: 10px;
+}
+
+.project-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.project-description {
+    font-size: 18px;
+    margin: 0;
+}
+
+.links {
+    margin: 80px 0 0 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.links-section {
+    font-family: 'Urbanist', sans-serif;
+    margin: 20px 0;
+}
+
+.links-section ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.links-section li {
+   margin: 10px 20px 10px 0;
+   padding: 10px;
+   border-radius: 10px;
+}
+
+.links-section a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 12px;
+}
+.links-section i {
+    margin-right: 8px;
+}
+
+
+
+
+/* .images {
+    margin: 80px 0 0 30px;
+    font-family: 'Montserrat', sans-serif;
+
+} */
+
+.contact {
+    margin: 80px 0 60px 30px;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 1px;
+    color: #ffffff;
+}
+
+
+footer {
+    padding: 20px;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+}
+
+.copyright {
+    align-self: flex-start;
+    font-size: large;
+}
+
+.icons a {
+    align-self: flex-end;
+    color: #9c9c9c;
+    font-size: 22px;
+    margin: 0 3px;
+    text-decoration: none;
+}
+
+.footerelements {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icons i:hover {
+    color: #ffffff;
+}
+
+@media only screen and (max-width: 886px) {
+    .navbar {
+        display: none;
+    }
+
+    .navbar2 {
+        display: block;
+        overflow: hidden;
+        background-color: rgba(25, 56, 88, 0.479);
+        position: fixed;
+        top: 0;
+        width: 100%;
+        backdrop-filter: blur(8px);
+    }
+
+    .logo2 {
+        float: left;
+        font-size: 30px;
+        font-weight: 800;
+        font-family: 'Urbanist', sans-serif;
+        color: #ffffff;
+        cursor: default;
+        padding: 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .logo2 i {
+        cursor: pointer;
+    }
+
+    #nav-items a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-family: 'Montserrat', sans-serif;
+        position: relative;
+        margin: 30px;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .aboutme{
+        padding-right: 30px;
+    }
+    .project{
+        width: 50%;
+    }
+    
+}
+@media screen and (max-width: 600px) {
+    .projects {
+      flex-direction: column;
+    }
+    .project{
+        width: 500px;
+    }
+  }
+  

@@ -1,0 +1,38 @@
+* {
+    transition: all 0.5s ease-in-out;
+}
+
+body {
+    background-color: #121212;
+
+}
+
+.navbar {
+    background-color: #3a3a3a48;
+}
+
+#theme-select option {
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.logo {
+    color: #ffffff;
+}
+.white {
+    background-color: #363636;
+    margin-right: 20px;
+}
+.grey {
+    background-color: rgb(112, 112, 112);
+}
+.links-section li {
+    background-color: #1b1b1b;
+ }
+ .links-section ul li:hover{
+    background-color: rgb(17, 17, 17);
+    transition-duration: .1s;
+}
+footer {
+    background-color: #1b1b1b;
+}
