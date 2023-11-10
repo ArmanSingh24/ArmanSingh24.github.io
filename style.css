@@ -127,11 +127,12 @@ hr {
 
 
 .projects {
+    padding-top: 80px;
     margin: 20px 0 0 30px;
     font-family: 'Montserrat', sans-serif;
 }
 .projects h2 {
-    margin: 120px 0px 0px 3px;
+    margin: 20px 0px 0px 3px;
 }
 .project-icons{
     display: flex;
@@ -307,7 +308,7 @@ footer {
 
 @media screen and (max-width: 600px) {
     .header {
-        font-size: 28px;
+        font-size: 25px;
     }
 
     .projects {
@@ -330,5 +331,8 @@ footer {
     .project-icons{
         margin: -70px 0 0px -25px;
         transform: scale(0.9, 0.9);
+    }
+    .contact div{
+        margin-left: -10px;
     }
 }
