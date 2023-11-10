@@ -10,7 +10,9 @@ body {
 .navbar {
     background-color: #3a3a3a48;
 }
-
+.navbar2 {
+    background-color: #3a3a3a48;
+}
 #theme-select option {
     color: #ffffff;
     background-color: #000000;
@@ -34,5 +36,5 @@ body {
     transition-duration: .1s;
 }
 footer {
-    background-color: #1b1b1b;
+    background-color: #181818;
 }
