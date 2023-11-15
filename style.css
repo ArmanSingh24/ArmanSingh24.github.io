@@ -13,7 +13,6 @@ body {
 }
 
 .navbar {
-    overflow: hidden;
     position: fixed;
     top: 0;
     width: 100%;
@@ -75,7 +74,6 @@ nav ul li a:hover:after {
 .main {
     color: white;
     margin-top: 150px;
-    max-width: fit-content;
 }
 
 .header {
@@ -138,9 +136,6 @@ hr {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-}
-.projects-header {
-    width: 100%;
 }
 
 .project {
@@ -212,6 +207,7 @@ hr {
 
 .contact {
     margin: 80px 0 60px 30px;
+    padding-top: 1px;
     font-family: 'Montserrat', sans-serif;
     padding-top: 1px;
     color: #ffffff;
@@ -227,7 +223,7 @@ footer {
 .copyright {
     align-self: flex-start;
     font-size: large;
-    margin: 0 0 0 2px;
+    margin: 7px 0 0 2px;
 }
 
 .icons {
@@ -321,9 +317,6 @@ footer {
 }
 
 @media screen and (max-width: 450px) {
-    .header {
-        margin-left: 20px
-    }
     .footerelements {
         flex-direction: column;
     }
