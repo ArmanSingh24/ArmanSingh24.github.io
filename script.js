@@ -1,3 +1,4 @@
+//switch theme
 function switchTheme() {
   var theme = document.getElementById('theme');
   var icon = document.getElementById('themeIcon');
@@ -7,7 +8,7 @@ function switchTheme() {
     theme.href = 'themes/theme1.css';
   }
 }
-
+// display current date and time
 document.addEventListener("DOMContentLoaded", function() {
   let time = document.getElementById("timenddate");
 
@@ -17,15 +18,18 @@ document.addEventListener("DOMContentLoaded", function() {
     time.innerHTML =  " &#128218; • " + "Kota, IN • " + d.toLocaleDateString('en-US', options) + " • " + d.toLocaleTimeString();
   }, 1000);
 });
+//display age
+document.addEventListener('DOMContentLoaded', function() {
+  function calculateAge() {
+      var birthDate = new Date('2008-03-24');
+      var now = new Date();
+      var age = (now - birthDate) / (365.25 * 24 * 60 * 60 * 1000);
+      document.getElementById('age').innerHTML = age.toFixed(8);
+  }
+  setInterval(calculateAge, 50);
+});
 
- function calculateAge() {
-   var birthDate = new Date('2008-03-24');
-   var now = new Date();
-   var age = (now - birthDate) / (365.25 * 24 * 60 * 60 * 1000);
-   document.getElementById('age').innerHTML = age.toFixed(8);
- }
- setInterval(calculateAge, 50);
-
+//small nav
 window.onload = function () {
   var myDiv = document.getElementById("nav-items");
   var icon = document.getElementById("icon");
