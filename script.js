@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
   setInterval(() => {
     let d = new Date();
     let options = { year: 'numeric', month: 'short', day: 'numeric' };
-    time.innerHTML =  " &#128218; • " + "Kota, IN • " + d.toLocaleDateString('en-US', options) + " • " + d.toLocaleTimeString();
+    time.innerHTML =  " &#128218; • " + "Gwalior, IN • " + d.toLocaleDateString('en-US', options) + " • " + d.toLocaleTimeString();
   }, 1000);
 });
 //display age
@@ -48,3 +48,4 @@ window.onload = function () {
     }
   });
 };
+
