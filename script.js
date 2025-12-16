@@ -51,7 +51,7 @@ async function loadSpotifyStatus() {
       data.text;
   } catch (err) {
     document.getElementById("spotify-status").innerText =
-      "🎧 Unavailable";
+      "Unavailable";
   }
 }
 
