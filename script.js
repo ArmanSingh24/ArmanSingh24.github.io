@@ -41,19 +41,28 @@ window.onload = function () {
 };
 
 // Spotify Now Playing
+let lastText = "";
+
 async function loadSpotifyStatus() {
   try {
     const res = await fetch(
-      "https://my-spotify-activity.vercel.app/api/status"
+      "https://my-spotify-activity.vercel.app/api/status",
+      { cache: "no-store" }
     );
     const data = await res.json();
 
-    document.getElementById("spotify-status").innerText =
-      data.text;
+    if (data.text !== lastText) {
+      document.getElementById("spotify-status").innerText = data.text;
+      lastText = data.text;
+    }
   } catch (err) {
     document.getElementById("spotify-status").innerText =
       "Unavailable";
   }
 }
 
+// initial load
 loadSpotifyStatus();
+
+// update every 15 seconds
+setInterval(loadSpotifyStatus, 5000);

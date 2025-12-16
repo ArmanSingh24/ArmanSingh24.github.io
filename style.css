@@ -77,7 +77,7 @@ nav ul li a:hover:after {
 }
 
 .header {
-    margin-left: 23px;
+    margin: 20px 20px 0 20px;
     font-size: 40px;
 }
 
@@ -90,7 +90,6 @@ nav ul li a:hover:after {
 .status {
     font-family: "Lilex", monospace;
     font-size: 15px;
-    margin: 8px;
 }
 
 .about {
