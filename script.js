@@ -18,17 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
     time.innerHTML =  " &#128218; • " + "Gwalior, IN • " + d.toLocaleDateString('en-US', options) + " • " + d.toLocaleTimeString();
   }, 1000);
 });
-/*display age
-document.addEventListener('DOMContentLoaded', function() {
-  function calculateAge() {
-      var birthDate = new Date('0000-00-00');
-      var now = new Date();
-      var age = (now - birthDate) / (365.25 * 24 * 60 * 60 * 1000);
-      document.getElementById('age').innerHTML = age.toFixed(8);
-  }
-  setInterval(calculateAge, 50);
-});
-*/
+
 //small nav
 window.onload = function () {
   var myDiv = document.getElementById("nav-items");
@@ -49,4 +39,20 @@ window.onload = function () {
   });
 };
 
+// Spotify Now Playing
+async function loadSpotifyStatus() {
+  try {
+    const res = await fetch(
+      "https://my-spotify-activity.vercel.app/api/status"
+    );
+    const data = await res.json();
 
+    document.getElementById("spotify-status").innerText =
+      data.text;
+  } catch (err) {
+    document.getElementById("spotify-status").innerText =
+      "🎧 Unavailable";
+  }
+}
+
+loadSpotifyStatus();
