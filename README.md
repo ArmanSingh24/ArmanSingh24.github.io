@@ -6,8 +6,7 @@ It represents my early exploration of web development design experiments, basic 
 
 The website is intentionally kept **live** as a record of where I started.
 
-👉 A new, redesigned portfolio that reflects my current skills, thinking, and engineering practices is available here:
-[in dev.‼️]
+👉 A new, redesigned portfolio that reflects my current skills, thinking, and engineering practices is available here: [Arman's Portfolio](https://armansingh.vercel.app)
 
 ---
 
